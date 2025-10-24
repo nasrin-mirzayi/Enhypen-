@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop card</title>
+    <style>
+        body{
+            background-image: url(./img/background.jpg);
+            background-repeat: no-repeat;
+
+            background-position: center;
+            background-size: cover;
+        }
+        h1{
+            font-size: 3rem;
+            margin-left: 30%;
+            margin-top: 10%;
+            color:gold;
+            padding: 20px 20px;
+        }
+        a{
+            margin-left: 40%;
+            font-size: 2.4rem;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1> thank you for shopping.<br>
+    enjoy listening 💛💛</h1><br><br>
+    <a href="./index2.html"> Back to home</a>
+
+   
+  
+ <script>
+    let userinput =prompt(`what is your name?`)
+ let age =prompt(`how old are you?`)
+ let element=prompt(` which album u bought? `)
+    if(element === null){ alert("please enter correctly! ❌❕");
+        throw new error("invalid");}
+
+        alert(`welcome ${userinput}.
+    oh, it seems like you're " ${age} " years old.
+   ok, you bought " ${element} " album.
+   lemme give u more information about your album.🤭`)
+const choice=prompt(`${userinput}, select the number of your album which u bought:
+1> Romance Untold
+2>Desire Unleash
+3> Orange Blood
+4> Dark Blood
+5> Dark Moon
+`)
+if(choice===null){
+    alert("invalid! ⚠️")
+ }
+switch(choice){
+    case"1":
+    prompt(`good choice. romance untold released in 2024
+    and consider 10 songs. `);
+    alert(` congratulations " ${userinput} "
+    enjoy listening. `)
+     alert(`thank you ${userinput}, for shopping.
+     hopefully had an information about ENHYPEN as well. 
+    have a nice day ${userinput}💛`)
+break;
+
+case "2":
+    prompt(`good choice. Desire Unleash released in 2025
+    it's a new album. also my favorite one
+    we have 6 songs in that album.`);
+            alert(`congratulations dear " ${userinput} " 🥰`)
+             alert(`thank you ${userinput}, for shopping.
+     hopefully had an information about ENHYPEN as well. 
+    have a nice day ${userinput}💛`)
+    break;
+
+    case "3":
+        alert(`Orange Blood...good choice
+        the album is from 2024 
+        the album covered calm songs which makes u feel better.
+        one of this album songs called " still monster " is my favorite song. with that song i become an engene.🥰`)
+     alert(`thank you ${userinput}, for shopping.
+     hopefully had an information about ENHYPEN as well. 
+    have a nice day ${userinput}💛`)
+break;
+
+    case "4":
+        alert(`Dark Blood...good choice ${userinput}
+        the album is from 2024 .
+        actually they become popular with this album. the title is " Bite Me " which is a cool song.`)
+         alert(`thank you ${userinput}, for shopping.
+     hopefully had an information about ENHYPEN as well. 
+    have a nice day ${userinput}💛`)
+break;
+
+    case "5":
+        alert(` " Dark Moon "
+    this album have 4 songs and an animation.
+    `)
+     alert(`thank you ${userinput}, for shopping.
+     hopefully had an information about ENHYPEN as well. 
+    have a nice day ${userinput}💛`)
+    break;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+body{
+    /* margin-top: 2rem; */
+    background-color: black;
+}
+p,h1,h2,h3,td,h4 {
+    color: white;
+}
+#logo{
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  text-shadow: lightgreen 1px 0px;
+}
+.size{
+    width:50%;
+    height: 400px;
+    margin-left: 24%;
+    background-size: cover;
+}
+#max{
+    max-width: 500px;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#overview{
+    background-color:rgba(192, 192, 192, 0.116) ;
+    margin:3% 5%;
+    padding:20px 40px;
+}
+#overview>p {
+    padding-left: 50px;
+}
+.margin{
+    margin-left: 12%;
+}
+
+h3{
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 2rem;
+}
+.nav,.navbar2{
+    display:inline-block;
+    margin-left: 70px;
+    text-decoration: none;
+    background-color:rgba(192, 192, 192, 0.116);
+    color:lightgreen;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 30%;
+    padding:10px 18px;
+}
+
+.navbar{
+    display: inline-block;
+}
+.card{
+        background-color:black;
+        text-align: center;
+}
+
+td{
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+.margin2{
+    margin-left: 18%;
+}
+.song{
+    display:inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 1rem 9%;
+    background-color:gray;
+    width: 200px;
+    height: 60x;
+    border-radius: 35%;
+    padding: 10px 10px;
+}
+.card2{
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 36px;
+}
+.card2>img{
+    border:double  6px lightgreen;
+    width: 250px;
+    height:250px;
+}
+.card2-title{
+    color:lightgreen;
+    font-size: 1.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1rem;
+}
+.card2-text{
+    color: lightgreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+#facts>li{
+    color: white;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+ #introimg{
+   width:409px;
+   height:530px;
+}
+#intro{
+   display:flex;
+   justify-content: center;
+   gap:100px;
+   margin-top: 1rem;
+}
+#facts{
+    padding : 2rem;
+    margin:8px 2rem;
+}
+
+.footer{
+    height: 300px;
+    background-color: black;
+    display: flex;
+    gap:10%;
+}
+#footerp{
+    margin-top: 3rem;
+}
+#footerp>p{
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.input, #guess{
+    width:340px;
+    height:50px;
+    border:white solid 1px;
+    background-color: black;
+    color: white;
+}
+#lyrics{
+    background-color: black;
+    font-size: small;
+    width: 90px;
+    text-align: center;
+    margin-left: 45px;
+    display: flex;
+}
+#audio{
+    width:100px;
+    height:20px;
+    background-color: black;
+}
+/* #div{
+    display: flex;
+    max-width: 200px;
+} */
+.section-p{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s ease;
+}
+.section-p--visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+  @keyframes appear{
+            from{
+                opacity: 0;
+                transform: translateX(-70px);
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        .animation{
+            animation: appear linear;
+            animation-timeline: view() ;
+            animation-range: entry 0% 30% ;
+        }
+.animation2>li{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.animation2{
+    max-width: fit-content;
+    margin: 2rem 2rem;
+    padding: 1rem 2.2rem;
+    animation: linear appear2;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+  @keyframes appear2{
+            from{
+                opacity: 0;
+                clip-path: inset(100% 100% 0 0);
+            }
+            to{
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+            }
+        }
+.animation3{ 
+    max-width: fit-content;
+     margin-left:30%;
+     animation: linear appear3;
+    animation-timeline: view();
+    animation-range: entry;
+
+}
+@keyframes appear3{
+          from{
+                opacity: 0;
+                transform: translatex(-100px);
+            }
+            to{
+                opacity: 1;
+                transform: translatex(0px);
+            }
+}
+#buy,#buy0,#buy1,#buy2,#buy3{
+    background-color: rgba(0, 0, 0, 0.568);
+    display: block;
+    margin: 8% 15%;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 10%;
+    width: 60%;
+
+}
+#flex{
+    display: flex;
+    background: url(./img/background.jpg) no-repeat;
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.icon{
+    font-size: larger;
+    color: white;
+    padding:0.7rem ;
+}
+.right{
+    flex-basis: 50%;
+    backdrop-filter: blur(6px);
+    margin: 5rem 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+}
+.left{
+    flex-basis: 50%;
+    backdrop-filter: blur(5px);
+
+}
+#carouselintro>.carousel-inner>.carousel-item>img {
+    border-radius: 10%;
+}
+#borderintro{
+    border: lightgreen 1px groove;
+    border-bottom: none;
+}
+.circle{
+  width: 100px;
+  height: 80px;
+ 
+  box-shadow: 0 0 20px blue;
+  color: white;
+  text-align: center;
+  padding: 30px 4px;
+  font-family: 'Times New Roman', Times, serif;
+   animation: bounce 20s ease-in-out ;
+}
+@keyframes bounce {
+  0%,100%{
+  transform:translateX(0);
+  }
+  50%{
+    transform: translateX(1150px);
+  }
+}
+#details{
+    font-size: 1.6rem;
+}
+
+
+@media screen and ( max-width:600px) {
+
+.margin2{
+    margin-left:18%;
+}
+.margin{
+  margin-left: 0% ;
+}
+  
+.size{
+    width:100%;
+    height: auto;
+    background-size: cover;
+    margin-left: 1%;
+}
+
+#logo{
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 15px;
+  font-size:1.5rem;
+}
+.nav{
+    display:block;
+    margin-left: 20px;
+    font-size: 1rem;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.navbar2{
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 25px;
+    
+}
+#max{
+    max-width: 100%;
+    font-size: 1rem;
+}
+#overview{
+    background-color:rgba(192, 192, 192, 0.116) ;
+    margin:0% 0%;
+    padding:0px 0px;
+    width: 100%;
+    height: auto;
+   font-size: medium;
+   margin-bottom: 16px;
+   margin-top: 2rem;
+}
+#overview>p {
+    padding: 20px 20px;
+    font-size: medium;
+}
+.container{
+    width: fit-content;
+}
+h1,h3{
+    font-size: 2rem;
+    text-align: center;
+}
+td{
+    font-size: medium;
+    padding-left: 4%;
+    margin-bottom: 1rem;
+    color: wheat;
+}
+
+h2{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 1rem;
+}
+.card2{
+    width:100%;
+    text-align: center;
+    display:block;
+    margin-left: 3px;
+}
+.card2-text{
+    margin-bottom: 1rem;
+}
+#flex{
+    display:block;
+    height:fit-content;
+    width:100%;
+}
+.right{
+    display: block;
+    font-size: 1rem;
+    margin:1rem 1rem;
+    padding: 1rem 1.3rem;
+}
+.left{
+    display: block;
+}
+#buy,#buy0,#buy1,#buy2,#buy3{
+    display: block;
+    margin: 8% 15%;
+    font-size: 1.4rem;
+    width:fit-content;
+}
+#h4{
+text-align: center;
+font-size: 1.4rem;
+margin-top: 2rem;
+}
+#details{
+    font-size:medium;
+}
+.animation3{
+     margin-left:6%;
+}
+.input{
+    width:100%;
+    margin-bottom: 1.5rem;
+}
+.footer{
+   display: block;
+   width:100%;
+   height:auto;
+   border: groove rgba(128, 128, 128, 0.247) 1.5rem;
+   margin-top: 1rem;
+}
+#footerp{
+    width: fit-content;
+}
+
+}

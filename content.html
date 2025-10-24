@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+  <script src="./bootstrap.js"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+   
+    <style>
+
+.intro{
+  background-image: url(./img/introcon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+}
+.navbar{
+  display: inline-block;
+}
+.nav{
+  display:inline-block;
+  margin-left: 70px;
+  text-decoration: none;
+  background-color:white;
+  color:black;
+  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 30%;
+  padding:10px 18px;
+  cursor: pointer;
+}
+body{
+  margin:2rem;
+  background-color: black;
+}
+h2{
+  text-align: center;
+  color:white;
+  text-shadow: 0px 1px lightblue;
+  margin-top: 5rem;
+  animation: right linear 6s infinite;
+}
+ @keyframes right{
+    25%{
+        transform: translateX(10px);
+    }
+ }
+ .button2{
+    width:200px;
+    height:80px;
+    background-color:black;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+#video{
+  margin-top: 5rem;
+  border: groove 7px rgba(0, 255, 255, 0.445);
+  float: right;
+  width: 50%;
+  margin-right: 5rem;
+}
+.card-body{
+  background-color:black;
+}
+.card{
+  box-shadow: 0 2px 5px white;
+}
+.card-title, .card-text{
+  color: whitesmoke;
+}
+  @keyframes appear{
+  from{
+    opacity: 0;
+    transform: translateX(-70px);
+    }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    }
+}
+.animation{
+  animation: appear linear;
+  animation-timeline: view() ;
+  animation-range: entry 0% ;
+}
+h1{
+  text-align: center;
+  color: snow;
+}
+#div3{
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+}
+#div4{
+  margin-top:3rem;
+}
+#border{
+  border: groove 7px rgba(0, 255, 255, 0.445);
+  margin-top: 8rem;
+  width: 30%;
+  float: left;
+  margin-left: 5rem;
+}  
+#board{
+  max-width: 500px;
+  height: 200px;
+  margin: 1rem auto;
+  background: rgba(0, 0, 0, 0.212);
+  padding: 20px;
+  border-radius: 10px ;
+  box-shadow: 0 2px 5px white;
+}
+#messageinput{
+  width: 60%;
+  padding:8px;
+  margin-left: 10px;
+  background-color: skyblue;
+}
+#btn, #addbtn{
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 30px;
+}
+#guess{
+  background-color: rgba(245, 222, 179, 0.637);
+  padding: 10px 9px;
+  border-radius: 20%;
+  width: 170px;
+}
+li{
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#movietext{    
+  font-size: 1.7rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: white 1px 0;
+}
+p{
+  color: wheat;
+  text-align: left;
+  font-size: larger;
+}
+@media screen and (max-width:600px) {
+
+#div4{
+  margin-top: 2rem;
+  width: 100%;
+  float: none;
+}
+p{
+  text-align: center;
+  font-size: medium;
+}
+#border{
+  border: groove 2px rgba(0, 255, 255, 0.445);
+  margin-top: 5rem;
+  width: 100%;
+  margin-left:0%;
+}
+h1{
+  font-size: 1rem;
+  margin:0%;
+}
+.nav{
+  margin-left: 0;
+}
+#div3{
+  font-size: medium;
+}
+.intro{
+  background-size: cover;
+  height:400px;
+  width: 100%;
+}
+h2{
+  font-size:medium;
+  text-align: center;
+}
+#messageinput{
+  width: 60%;
+  padding:8px;
+  margin-left:0;
+  background-color: skyblue;
+}
+#addbtn{
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 5px;
+}
+#video{
+  margin-top: 3rem;
+  border: groove 2px rgba(0, 255, 255, 0.445);
+  float: none;
+  width: 100%;
+  margin-right: 2rem;
+}
+}
+
+  </style>
+    
+</head>
+<body>
+
+<div class="intro">
+
+  <nav class="navbar">
+     <a class="nav" href="./index2.html"> Home</a>
+    <h3 class="nav" aria-controls="navbarnav" data-bs-toggle="collapse" data-bs-target="#navbarnav" aria-expanded="false"> About</h3>
+     <div  class="collapse navbar-collapse" id="navbarnav">
+        <a class="nav" href="./heeseung.html">Heeseung</a>
+         <a class="nav" href="./jake.html">Jake</a>
+          <a class="nav" href="./jungwon.html">Jungwon</a>
+          </div>
+         </nav>
+</div>
+
+
+<h2> Enhypen have lots of videos, reality shows, programs,<br> interviews and lots of content to watch<br>
+so i put the link for you to find easier 😊 </h2>
+<br><br><br>
+
+  <p class="animation"> it's 5 years since Enhypen is active.<br>
+can you guess how many years i'm an engene (Enhypen's fan) ?</p>
+    <input type="number" id="guess" min="1" max="5" />
+    <button onclick="checkguess()"  id="btn">submit</button><br>
+    <p id="message"></p> 
+
+
+<div class="container mt-5">
+<div class="row g-5">
+ <h1 class="animation">Recommended Content to watch</h1>
+   <div class="col-md-4">
+    <div class="card h-100 animation">
+      <img src="./img/en o clock.jpg"alt="en o'clock">
+        <div class="card-body">
+          <h3 class="card-title">En o'clock</h3>
+          <p class="card-text"> ENHYPEN'S weekly variety show series with game, challenge, and having fun. </p>
+          <button class="button2"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-EXWrjvNC18Oj4YEGfZKXkO&si=3MXdquHADwM_TN5Y"> watch it now</a></button> </div></div></div>
+   
+  <div class="col-md-4 animation">
+    <div class="card h-100">
+     <img src="./img/so so fun.jpg" alt="so so fun">
+         <div class="card-body">
+          <h3 class="card-title"> so so fun </h3>
+          <p class="card-text"> ENHYPEN first vocation trip. they all went to a trip in korea.and had fun.</p> 
+          <button class="button2"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-GrMZTqRZinxleeALwB6-YV&si=a3sTd8FNyWp0-DFg"> watch it now</a></button>  </div></div></div>
+    
+    <div class="col-md-4 animation">
+    <div class="card h-100">
+      <img src="./img/en hi.jpg"alt="enhypen hi">
+        <div class="card-body">
+          <h3 class="card-title">Enhypen Hi</h3>
+          <p class="card-text"> ENHYPEN first show after I-LAND. preparing for their first album. </p>
+          <button class="button2"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-HzJtax1cT7NDBos5xvVfVT&si=rXkzv02-LajRLP5b"> watch it now</a></button> </div></div></div>
+    
+        </div>
+    </div>
+
+<Section id="border">
+
+<div id="div3">
+    <h1 class="animation"> Official  content</h1>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-GshOjhZBypZnY-e9E2iUfU&si=wvay_lEV5qj2fA8U"> MUSIC VIDEOS</a></li>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-GNsXICbIPUpwS28YVEoe2F&si=txDdm4lLWpql3fqi"> Choreography</a></li>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-Erb1lLXpUbc5VVslavAZsi&si=pkoVRp-zfRI3ZBcJ"> NOTE</a></li>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-E8Ir8ADT4nG54lDiPnqTSy&si=Fm1u6bIIMUoe_-cD">COVERS </a></li>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-FfzVrtGWWBV_KCXz4dowM8&si=vW5KNw35fvMkAWuT"> EN-DRAMA</a></li>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-GtZ_GpsWa3c_wybmZ9-3oq&si=tS0nEpph90VtPhZH"> ENTER-KEY</a></li>
+    <li class="animation"> <a href="https://youtube.com/playlist?list=PLMQ4WMltba-F67iE1rTXm58n5mnFWqSir&si=gnFhAnGQC19ZHUWd"> EN-LOG</a></li> 
+</div>
+
+<div id="div4">
+ <h2 class="animation"> Add here what you wanna see</h2>
+        <div id="board"  class="animation">
+            <input type="text" id="messageinput">
+            <button id="addbtn" onclick="addbtn()"> Add</button>
+            <ul id="messagelist"></ul>
+        </div>
+
+</section>
+
+<div id="video"><br><Br>
+  <h1 class="animation"> Enhypen in snow 🥰</h1>
+    <div class="video-container mt-5 animation">
+      <div style="text-align: center;">
+<video controls style="width:100%;" height="550px;"><source type="video/mp4" src="./img/InShot_20251020_051705640.mp4">
+</video> </div></div> <br>
+
+<h2 class="animation"> How was the video?</h2>
+<a href="#video" onclick="moviestar()" id="movietext">how many stars whould you give?</a>
+<br><br>
+</div>
+
+
+<script>
+
+const addbtn=document.getElementById("addbtn");
+const messageinput=document.getElementById("messageinput");
+const messagelist=document.getElementById("messagelist");
+  
+addbtn.addEventListener("click",()=>{
+const text=messageinput.value.trim();
+ if(text === "")return;
+
+const li=document.createElement("li");
+  li.textContent=text;
+  li.style.backgroundColor="lightblue"
+const deletebtn=document.createElement("button");
+  deletebtn.style.backgroundColor="black"
+  deletebtn.style.color="white"
+  deletebtn.textContent="delete";
+  deletebtn.classname="deletebtn";
+   deletebtn.addEventListener("click",()=>{
+messagelist.removeChild(li);
+});
+    li.appendChild(deletebtn);
+    messagelist.appendChild(li);
+
+   messageinput.value="";
+   messageinput.focus();
+});
+
+
+const moviestar=()=>{
+const moviestar=prompt(` select one number:
+    1 star ..."Bad"
+    2 stars..."Good"
+    3 stars..."Great"`)
+
+switch(moviestar){
+    case"1":
+    alert(`ohh. seems like you didn't like the video
+      it's comletely ok to feel like that 😊`)
+
+    break;
+
+    case "2":
+            alert(` thank you... it was my pleasre 🥰`)
+    break;
+
+    case "3":
+        alert(`wow! thank you sweet heart
+          so from now on, you can see their videos more and more 🥰`)
+    break;
+
+     
+     default: 
+           alert(` invalid!
+            at least you should choose a star from the list `)
+     break;
+ }
+
+}
+
+const secretnumber=2;
+let attempts=0;
+    function checkguess(){
+    const guess=
+    parseInt(document.getElementById("guess").value);
+    const message = document.getElementById("message");
+    attempts++;
+
+    if(guess === secretnumber){
+        message.textContent = `💖 correct!
+        hhhhh yeah it's been 2 years since i'm an engene.
+         you guessed it in ${attempts} TimeRanges.`;
+        message.style.color="lightblue";
+    }else if(guess < secretnumber){
+        message.textContent = `low!⚠️
+        try again.`;
+        message.style.color = "lightorange";
+    } else if(guess > secretnumber){
+        message.textContent = `high! ⚠️
+        try again.`;
+        message.style.color = "lightorange";
+    }else{
+    message.textContent = `invalid input. ⁉️`
+    message.textContent.style="red"
+}
+}
+
+    </script> 
+</body>
+</html>
